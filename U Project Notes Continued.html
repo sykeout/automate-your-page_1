@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<head>
+	<title>CSykes Udacity Course Notes</title>
+	<link rel="stylesheet" href="syko-style.css">
+</head>
+
+<body>
+
+<h1>Syko's Course Notes</h1>
+
+	<div class="tbotw">
+		<h2>Web Basics</h2>
+	<!-- The basics of the web // how it works, html, tags and elements, puters are stupid, inline vs block -->
+		<div class="unit">
+			<h3>How it works</h3>
+			<p>The internet is a truck load of interconnected computers that can communicate with one another. When an internet user requests a web page by typing in a url like https://www.udacity.com their computer sends the page request to a server (another computer) which returns the html document to be read by the users browser of choice.</p>
+		</div>
+		<div class="unit">
+			<h3>html explained</h3>
+			<p>html is an acronym for <strong>h</strong>yper<strong>t</strong>ext-<strong>m</strong>arkup-<strong>l</strong>anguage. This html code/text is used to control what users see on the internet. Most of it at least.</p>
+		</div>
+		<div class="unit">
+			<h3>Tags and Elements</h3>
+			<p>In an effort to control the structure of a web page, when we code with html we need to explain to the browser what each element of the page actually is, so it knows what to do with them. We do this by tagging each element.</p>
+		</div>
+		<div class="unit">
+			<h3>Puters are Stupid</h3>
+			<p>Computers are literal, and only understand code as it is supposed to me. This means that tiny mistakes, that are very hard to see for a human, can make big differences to what is presented in the browser.</p>
+		</div>
+		<div class="unit">
+			<h3>Inline vs. Block</h3>
+			<p>All html elements are either inline, which is to say they follow on from one another, or they are block elements. block elements are placed inside a box, which has many additional properties that can be manipulated to control everything from position on the page to borders.</p>
+		</div>
+	</div>
+
+
+	<div class="casd">
+		<h2>Structured Documents</h2>
+	<!-- dev tools, html tree structure, indentation, editors like sublime -->
+		<div class="unit">
+			<h3>Developer Tools</h3>
+			<p>Google provides tools that enable developers to see and play with the html and css code of existing web pages. This can be very helpful to help understand how subtle changes in the code make a difference to how the page is shown in the browser.</p>
+		</div>
+		<div class="unit">
+			<h3>Tree Structure</h3>
+			<p>html elements can be placed inside other html elements, many times over. This means that in the code they are written like a family tree, where one parent has two children within it, which in turn have 3, 4 or any number of children, and so on.</p>
+		</div>
+		<div class="unit">
+			<h3>Indentation</h3>
+			<p>When you write html code, or look at it, the lines of code are indented depending on how far nested that line of code is within another line of code.</p>
+		</div>
+		<div class="unit">
+			<h3>Text Editors</h3>
+			<p>There are many software applications that are built to make writing code as easy and efficient as possible, called text editors. I'm using sublime text right now.</p>
+		</div>
+	</div>
+
+
+	<div class="aswcss">
+		<h2>Adding Style With CSS</h2>
+	<!-- avoid repetition, CSS in detail -->
+		<div class="unit">
+			<h3>Avoiding Repetition</h3>
+			<p>Repeatition is the enemy of coding, and should be avoid at all costs. Efficiencies with coding itself, as well as structure should be used instead. Because so many elements within a webpage, or entire website are very similar, web developers would have to write the same style code over and over. One prime example of reducing repreatition os the use of css to control the style of a html web page, instead of coding it within html.</p>
+		</div>
+		<div class="unit">
+			<h3>CSS In Detail</h3>
+			<p>CSS stands for cascading-style-sheets. It is a very efficient way for developers to manipulate and control style attributes for multiple web pages, and html elements.</p> <a href="https://www.youtube.com/watch?v=0Xklu0dUmVU"> A quick video to watch here that covers the basic idea.</a>
+		</div>
+	</div>
+
+
+	<div class="itsp">
+		<h2>Introduction to Serious Programming</h2>
+	<!-- python, .py, core of programming, computer, program, precise sequence of steps, computation, high level language, input, interpreter, natural languages dont work -->
+		<div class="unit">
+			<h3>Programming</h3>
+			<p>Programming is simply write a precice series of steps to tell a computer what to do.</p>
+		</div>
+		<div class="unit">
+			<h3>Programming Languages</h3>
+			<p>Programming languages were created to overcome the limitations of natural languages, which are unsuitable for the literal intepretation computers are currently capable of. The two biggest downfalls of natural languages, are:</p>
+			<ul>
+				<li>Ambiguity</li>
+				<li>Verbosity</li>
+			</ul>
+		</div>
+		<div class="unit">
+			<h3>Python for Arithmetic</h3>
+			<p>Python requires perfect grammar for arithmetic otherwise a syntax error will occur. Don't panic if this happens. Simply debug, and refer back to the basic grammar rules:</p>
+			<ul>
+				<li>Expression -> Expression Operator Expression</li>
+				<li>Expression -> Number</li>
+				<li>Operator -> + * / - etc</li>
+				<li>Number -> 0,1,2,3,4......</li>
+				<li>Expression -> (Expression)</li>
+			</ul>
+			<p>Py calculates in integers by default, so to force it to poresent answers after the decimal you need to make one of the values have a decimal, like using 5.0 instead of simply 5.</p>
+		</div>
+        <div class="unit">
+			<h3>What is a variable?</h3>
+			<p>A variable is a way of storing a string of information under a name.</p>
+			<p>In py the = sign doesn't mean equals, it means assignment and is used to assign a name to a string.</p>
+			<p>We create variables via an 'assignment statement', like this: my_variable = "let me out, I keep getting stuck in here". This means from this point forward (unless changed later) 'my_variable' means "let me out, I keep getting stuck in here".</p>
+		</div>
+		<div class="unit">
+			<h3>And strings?</h3>
+			<p>A string is a string of characaters, basically anything we can type into a keyboard.</p>
+			<p>Strings must open and close with either "" OR '', but not a combination of those.</p>
+			<p>We can index strings, meaning that we can access any specific part of the string and do something with it. A simple example os printing a certain character from a specific location within the string. An example might be</p>
+			<p>my_name = "christiansykes"</p>
+			<p>print my_name[4] would print out the character at position 4 of my_name, i.e the letter 's'.</p>
+			<p>print my_name[1+1] would print out the character at position 2, ie: r</p>
+			<p>print my_name[-1] would print out the last charcter in the string</p>
+		</div>
+		<div class="unit">
+			<h3>Selecting Sub-sequences of a String</h3>
+			<p>Taking indexing one step further, we can select a range of characters from within the string.</p>
+			<p>print my_name[0:3] would print: chr</p>
+			<p>print my_name[3:] woudl print: istiansykes</p>
+		</div>
+		<div class="unit">
+			<h3>Find within strings</h3>
+			<p>We can also search for specific charcters within a string, using an in-build method called 'find'.</p>
+			<p>We do this with: variable_name.find('value')</p>
+			<p>print my_name.find('stia') would return: 4</p>
+			<p>We can further controld find, by specifying where in the string find is to start, we do this like:</p>
+			<p>print my_name.find('ia', 3)</p>
+		</div>
+		<div class="unit">
+			<h3>Functions // Proceedures</h3>
+			<p>We can create and save code proceedures that complete a task upon 1 or more inputs. They simply take inputs and do something with them, before returning a result.</p>
+			<p>First we define the proceedure, ike this:</p>
+			<p>def pro(input_a, input_b):</p>
+			<p>    result = input_a + input_b</p>
+			<p>    return result</p>
+			<p>To use, or "call", the proceedure, we pass in some inputs as per the defintition, like this:</p>
+			<p>print pro(4,5)</p>
+			<p>This would return 9</p>
+			<p>If the proceedure doesn't include a return statement, it could be said to do nothing, and therefore is of little use.</p>
+			<p>Proceedures are excellent for the avoidance of repetition, as they can be called as often as needed to complete the task they are defined to do.</p>
+		</div>
+		<div class="unit">
+			<h3>If Statements</h3>
+			<p>We might sometimes want to have a function run only IF inputs meet certain criteria, essentially adding simple decision making to the code. If statements allow us to do just that.</p>
+			<p>A simple if statement might look like this:</p>
+			<p>if A > b:</p>
+			<p>   return a</p>
+			<p>This would check to see wich value was higher, and if a was, it would return that value.</p>
+			<p>We can add in another line of code so that if a is not greater than b, the code returns b.</p>
+			<p>This could be done ina few ways, here are two examples:</p>
+			<ol>
+				<li>return b - long as this was indented to the same degree than the "if" statement was</li>
+				<li>else: return b</li>
+			</ol>
+			<div class="unit">
+			<h3>Loop a While</h3>
+			<p>Sometimes we might want code to keep on doing something, untill a certain criteria is met. We can do this with loops.</p>
+			<p>One kind of loop, is called the 'While Loop'.</p>
+			<p>This might look like this:</p>
+			<p>while a != b:</p>
+			<p>		return a</p>
+			<p>		a = a + 1</p>
+			<p>We'd set the variable a to a certain number first, and then the loop would keep printing the value of a, adding 1 to it, and then checking to see if it is not equal to b again. And so on.</p>
+		</div>
+		<div class="unit">
+			<h3>Lists</h3>
+			<p>Similar to strings, but with interesting addtional functionality and capabilities.</p>
+			<p>Can include aythign at all, including other lists.</p>
+			<p>Lists support mutuation:- You can make a change to the variable, rather than simply changing the assignement of the variable name/definition to a new variable.</p>
+			<p>Aliasing is possible:- Two definitions refer to the same variable. When the value is changed, it changes for both aliases.  </p>
+			<p>List Operations:</p>
+			<ul>
+				<li>Apend:- you can add values to new positions at the end of the list.</li>
+				<li>Plus:- You can join two strings together, like contatenation of two halves.</li>
+				<li>len // Length returns the number of elements in the list</li>
+			</ul>
+			<p>Looping through a list:- We are introduced to "For loops" that are motivated to run throguh all elements ina  list</p>
+			<p>For loops are structured like this:</p>
+			<p>			for e in list1:</p>
+			<p>				do soemthing</p>
+			<p>				return something else</p>
+		</div>
+		<div class="unit">
+			<h3>Solving Problems</h3>
+			<p>When facing problem solving challenges, there are some golden rules to follow:</p>
+			<ol>
+				<li>Dont Panic</li>
+				<i>What are the inputs? // Understand them fully</i>
+				<li>What are the outpus?</li>
+				<li>What is the relationship between the inputs and the outputs?</li>
+				<li>Write a simple mechnaical solution (think computer, not human)</li>
+				<li>Don't optimise prematurely</li>
+			</ol>
+		</div>
+	</div>
+</body>
